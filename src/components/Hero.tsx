@@ -94,10 +94,12 @@ function Hero() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
               <span className="gradient-text">{name}</span>
               <br />
-              <span className="text-foreground inline-block" style={{ minHeight: '1.5em' }}>
-                {currentDesignation}
-                <span className="animate-pulse">|</span>
-              </span>
+              <div className="relative h-[2.5em] md:h-[3em] lg:h-[3.5em]">
+                <span className="text-foreground absolute top-0 left-0 w-full">
+                  {currentDesignation}
+                  <span className="animate-pulse">|</span>
+                </span>
+              </div>
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 animate-fade-in-up delay-200">
